@@ -51,6 +51,7 @@ if game.PlaceId == 14375697 then
 	TextLabel.Text = "Script Is Ready!"
 	TextButton.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/t0rnado11/SFT-Hub/main/main.lua",true))()
+		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Welcome to SFT Hub", Text = "Coded by Tornado#1222", Button1 = "OK"})
 		SFTHLoader:Destroy()
 	end)
 else
